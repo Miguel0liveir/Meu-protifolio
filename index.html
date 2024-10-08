@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Miguel Oliveira</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Miguel Oliveira</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sobre" class="intro fade-in">
+        <div class="container">
+            <h2>Um pouco do Miguel</h2>
+            <div class="about-me">
+                <img src="img/WhatsApp Image 2024-10-03 at 22.12.09.jpeg" alt="Foto de Miguel Oliveira" class="profile-pic">
+                <div>
+                    <p>Olá! Meu nome é <strong>Miguel Oliveira</strong> e tenho 17 anos. Desde cedo, sou apaixonado por tecnologia, principalmente na área de desenvolvimento de software. Gosto de criar soluções que façam a diferença, seja por meio de jogos simples ou ferramentas úteis que melhoram a vida das pessoas.</p>
+                    
+                    <p>Atualmente, estou cursando <strong>Informática</strong> e venho desenvolvendo projetos práticos que me ajudam a aprimorar minhas habilidades. Meu foco é continuar crescendo como desenvolvedor e explorar novas áreas, como inteligência artificial e desenvolvimento de jogos. Meus projetos mais recentes incluem uma <strong>Pokédex interativa</strong> e um <strong>jogo do Mario</strong>, ambos disponíveis aqui no meu portfólio.</p>
+    
+                    <p>No futuro, pretendo expandir meu conhecimento e participar de grandes projetos que tenham impacto real. Se você está procurando alguém apaixonado por tecnologia e desenvolvimento, ou quer colaborar em algum projeto, não hesite em entrar em contato!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="projetos" class="projects fade-in">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="project-grid">
+                <div class="project fade-in">
+                    <h3>Jogo do Mário</h3>
+                    <p>Um jogo simples do Mário onde se deve pular obstáculos e evitar colisões com os tubos. A pontuação do jogador aumenta conforme ele avança.</p>
+                    <img src="img/mario.gif" alt="Jogo do Mário">
+                    <a href="https://miguel0liveir.github.io/Jogo.Mario/" target="_blank" class="btn">Ver Projeto</a>
+                </div>
+
+                <div class="project fade-in">
+                    <h3>Pokédex</h3>
+                    <p>Uma Pokédex funcional com informações sobre vários Pokémons. Desenvolvido usando HTML e CSS.</p>
+                    <img src="img/pokebola.png" alt="Pokédex">
+                    <a href="https://miguel0liveir.github.io/pokedex/" target="_blank" class="btn">Ver Projeto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="contact fade-in">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Entre em contato para discutir projetos, oportunidades ou colaborações.</p>
+            <form action="https://formsubmit.co/miguel.oliveirahuehue@gmail.com" method="POST">
+                <input type="text" name="Nome" required placeholder="Seu Nome">
+                <input type="email" name="Email" required placeholder="Seu Email">
+                <textarea id="message" name="message" rows="5"required placeholder="Sua Mensagem"></textarea> 
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/agradecimento.html">
+
+                <button type="submit" class="btn">Enviar</button>
+           </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Miguel Oliveira. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

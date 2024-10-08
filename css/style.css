@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #ff6f61;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: 700;
+}
+
+.intro, .projects, .videos, .contact {
+    padding: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    color: #ff6f61;
+    margin-bottom: 30px;
+}
+
+p {
+    text-align: center;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.project-grid, .video-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project, .video {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px;
+    width: 300px;
+}
+
+.project img, .video iframe {
+    margin-top: 10px;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2c2c2c;
+    color: #fff;
+}
+
+footer {
+    background-color: #1e1e1e;
+    padding: 10px 0;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.btn:hover {
+    background-color: #ff4c3b;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilizando a foto de perfil */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; /* Para garantir que a imagem se ajuste bem ao círculo */
+    border: 3px solid #ff4c3b; /* Um contorno elegante ao redor da imagem */
+    margin-right: 20px;
+}
+
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    background-color: #2e2e2e; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    color: #f0f0f0; 
+}
+
+
+.about-me p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+}
+
+.about-me strong {
+    color: #ff4c3b; 
+}
+
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff4c3b;
+}
+
+
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 15px;
+    }
+}
+
+
+
